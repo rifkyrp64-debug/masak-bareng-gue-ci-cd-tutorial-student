@@ -28,7 +28,7 @@ jobs:
       - name: Test + coverage report
         run: pytest tests/ -v --cov=app --cov-report=term-missing --cov-fail-under=80
 
-deploy:
+  deploy:
     name: Deploy ke Render
     runs-on: ubuntu-latest
     needs: test
